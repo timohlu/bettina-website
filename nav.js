@@ -1,21 +1,15 @@
-var lastScrollTop; // This Varibale will store the top position
+var lastScrollTop;
 
-navbar = document.getElementById('navbar'); // Get The NavBar
+navbar = document.getElementById("navbar");
 
-window.addEventListener('scroll', function () {
-  //on every scroll this funtion will be called
-
+window.addEventListener("scroll", function () {
   var scrollTop = window.scrollY || document.documentElement.scrollTop;
-  //This line will get the location on scroll
 
-  if (scrollTop > lastScrollTop && scrollTop > 200) { //if it will be greater than the previous
-    navbar.style.top = '-80px';
-    //set the value to the negetive of height of navbar 
+  if (scrollTop > lastScrollTop && scrollTop > 200) {
+    navbar.style.transform = "translateY(-100%)";
+  } else {
+    navbar.style.transform = "translateY(0%)";
   }
 
-  else {
-    navbar.style.top = '0';
-  }
-
-  lastScrollTop = scrollTop; //New Position Stored
+  lastScrollTop = scrollTop;
 });
