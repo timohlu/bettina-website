@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: Switzer;
+  font-family: SpaceGrotesk;
   src: url("assets/fonts/SpaceGrotesk-VariableFont_wght.ttf")
     format("truetype-variations");
   font-weight: 1 999;
@@ -13,8 +13,8 @@
 
 :root {
   --hero-title: calc(4.5vw + 1em);
-  --title: 1.2em;
-  --body: calc(100vw / 1em);
+  --title: 1.3em;
+  --body: 1.1rem;
   --footnote: 0.75em;
 
   --midgrey: #7e7e7e;
@@ -43,9 +43,9 @@ body {
   padding: 0;
   margin: 0;
   position: relative;
-  font-weight: 300;
   font-family: Switzer;
-  font-size: 1rem;
+  font-size: var(--body);
+  font-weight: 300;
   min-height: 100vh;
   max-width: 1800px;
   margin: auto;
@@ -231,6 +231,7 @@ h4 {
 .contact-info {
   font-size: var(--body);
   margin: 4px;
+  line-height: 1.5;
 }
 
 a.contact-info {
@@ -241,11 +242,6 @@ a.contact-info {
   display: flex;
   height: 50vh;
   position: relative;
-}
-
-.gallery-link-hero:hover .hero-img {
-  filter: brightness(0.75);
-  z-index: 0;
 }
 
 .image-link-centered {
@@ -313,7 +309,7 @@ a.contact-info {
 /* Gallery */
 .gallery-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-template-rows: auto;
   gap: 8px;
   margin-top: 24px;
@@ -374,6 +370,7 @@ a.contact-info {
 }
 
 .info-container {
+  margin-top: 50px;
   padding: 20px;
   font-size: var(--body);
 }
@@ -387,7 +384,7 @@ a.contact-info {
     --hero-title: calc(4.5vw + 1em);
     --title: 1.5em;
     --body: calc(0.2vw + 1em);
-    --footnote: calc(0.2vw + 0.5em);
+    --footnote: calc(0.2vw + 0.75em);
   }
 
   /* About Section */
@@ -434,4 +431,14 @@ a.contact-info {
     align-items: center;
     padding: 12px 20px 12px 20px;
   }
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 350;
 }
