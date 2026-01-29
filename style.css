@@ -100,8 +100,8 @@ section {
 
 .hero-title-container {
   position: absolute;
-  left: 12vw;
-  right: 12vw;
+  left: 100px;
+  right: 100px;
   transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
