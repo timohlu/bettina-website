@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Regular";
-  src: url("/assets/fonts/InterTight-VariableFont_wght.ttf") format("truetype");
+  src: url("/assets/fonts/Archivo-Variable.ttf") format("truetype");
   font-weight: 400;
 }
 
@@ -189,8 +189,13 @@ ul li {
 .about-divider {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: var(--pad-xxl);
 }
+
+/* .sticky-div {
+  position: sticky;
+  top: var(--pad-xxl)
+} */
 
 h2 {
   margin: 0;
