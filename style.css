@@ -16,6 +16,12 @@
   font-weight: 500;
 }
 
+@font-face {
+  font-family: "Regular";
+  src: url("/assets/fonts/InterTight-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400;
+}
+
 :root {
   --background: whitesmoke;
   --foreground: #111;
@@ -61,6 +67,7 @@ body {
   margin: auto;
   user-select: none;
   -webkit-user-select: none;
+  font-size: 1.2rem;
 }
 
 /* Section */
@@ -308,12 +315,14 @@ footer {
   }
 
   .contact-section {
+    flex-direction: column;
+    height: 70vh;
     font-size: 2em;
+    gap: var(--pad-xxl);
   }
 
-  .image-display {
-    width: auto;
-    height: auto;
+  .contact-text {
+    font-size: 1em;
   }
 
   footer {
@@ -324,18 +333,5 @@ footer {
     padding-bottom: 0;
     color: var(--accent);
     background-color: var(--background);
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .contact-section {
-    flex-direction: column;
-    height: 70vh;
-    font-size: 2em;
-    gap: var(--pad-xxl);
-  }
-
-  .contact-text {
-    font-size: 1em;
   }
 }
