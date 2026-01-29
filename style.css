@@ -317,7 +317,7 @@ footer {
   .contact-section {
     flex-direction: column;
     height: 70vh;
-    font-size: 2em;
+    font-size: 1.5em;
     gap: var(--pad-xxl);
   }
 
