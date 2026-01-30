@@ -63,7 +63,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  gap: var(--pad-xxxl);
+  gap: var(--pad-xxl);
 }
 
 /* Section */
@@ -136,7 +136,7 @@ section {
 .angebot-sprachen-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  gap: var(--pad-m);
+  gap: var(--pad-xl);
   align-items: start;
 }
 
